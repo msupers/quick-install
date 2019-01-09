@@ -4,7 +4,13 @@
 
 - 3.10.0-514.16.1.el7.x86_64
 
--  xfs ftype=0 
+-  xfs ftype=1
+
+```bash
+overlay2: the backing xfs filesystem is formatted without d_type support, which leads to incorrect behavior.
+         Reformat the filesystem with ftype=1 to enable d_type support.
+         Running without d_type support will not be supported in future releases.
+```
 
 ## Get Binary Tgz
 
