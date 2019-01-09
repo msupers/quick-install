@@ -8,14 +8,19 @@
 
 ## Get Binary Tgz
 
-- eg: wget https://download.docker.com/linux/static/stable/x86_64/docker-18.09.0.tgz
+```bash
+wget https://download.docker.com/linux/static/stable/x86_64/docker-18.09.0.tgz
+```
 
 ## Install Docker CE 
 
-- sh docker-init.sh docker-18.09.0.tgz
+```bash
+sh docker-init.sh docker-18.09.0.tgz
+```
 
 ## Check Install
 
-- docker  version 
-
-- docker  info
+```bash
+docker  version 
+docker  info
+```
