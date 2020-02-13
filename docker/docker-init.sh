@@ -51,7 +51,7 @@ After=network.target docker.socket
 [Service]
 Type=notify
 WorkingDirectory=/usr/local/bin
-ExecStart=/usr/bin/dockerd --storage-opt overlay2.override_kernel_check=1  --storage-driver=overlay2 --graph=/home/docker_rt \
+ExecStart=/usr/bin/dockerd --storage-opt overlay2.override_kernel_check=1  --storage-driver=overlay2 --graph=/data/docker_rt \
                 --selinux-enabled=false \
                 --log-opt max-size=1g
 ExecReload=/bin/kill -s HUP $MAINPID
